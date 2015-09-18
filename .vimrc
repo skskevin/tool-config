@@ -12,11 +12,6 @@ set cursorline
 " Enable syntax highlighting
 syntax enable
 
-colorscheme cgpro
-set background=dark
-set encoding=utf8
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
