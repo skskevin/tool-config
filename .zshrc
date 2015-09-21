@@ -33,14 +33,16 @@ plugins=(git autojump)
  
 source $ZSH/oh-my-zsh.sh
  
-# Customize to your needs...
+# -------------------------------------------------------------------
+# ENVIRONMENT [PATH]
+# -------------------------------------------------------------------
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin
 export PATH=/Applications/MAMP/bin/php/php5.4.25/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}!"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
  
  
@@ -82,16 +84,3 @@ alias capd='cap deploy'
  
 alias cls='clear'
  
- 
-# -------------------------------------------------------------------
-# FUNCTIONS
-# -------------------------------------------------------------------
- 
-# return my IP address
-function myip() {
-    ifconfig lo0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "lo0       : " $2}'
-     ifconfig en0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en0 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
-     ifconfig en0 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en0 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
-     ifconfig en1 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en1 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
-     ifconfig en1 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en1 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
-}
