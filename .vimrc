@@ -5,6 +5,7 @@
 set autoread
 set cursorcolumn
 set cursorline
+set fileformats+=dos
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
