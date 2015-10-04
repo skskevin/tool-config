@@ -72,7 +72,6 @@ alias glg1='git lg1'
 alias glg2='git lg2'
 alias glg='git lg'
 
-source $HOME/.aliases 
 # -------------------------------------------------------------------
 # Capistrano aliases
 # -------------------------------------------------------------------
