@@ -75,6 +75,7 @@ alias glg='git lg'
 # -------------------------------------------------------------------
 # Tmux aliases
 # -------------------------------------------------------------------
+alias tns='tmux new -s'
 alias tls='tmux list-session'
 alias tlw='tmux list-window'
 alias tsw='tmux switch -t '
