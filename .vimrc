@@ -6,6 +6,7 @@ set autoread
 set cursorcolumn
 set cursorline
 set fileformats+=dos
+autocmd FileType php setlocal noeol binary fileformat=dos
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
