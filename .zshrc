@@ -81,6 +81,7 @@ alias tsw='tmux switch -t '
 alias tlc='tmux list-command'
 alias tat='tmux attach -t'
 alias trs='tmux rename-session -t'
+alias tks='tmux kill-server'
 
 
 # -------------------------------------------------------------------
