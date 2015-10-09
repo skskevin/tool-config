@@ -73,6 +73,17 @@ alias glg2='git lg2'
 alias glg='git lg'
 
 # -------------------------------------------------------------------
+# Tmux aliases
+# -------------------------------------------------------------------
+alias tls='tmux list-session'
+alias tlw='tmux list-window'
+alias tsw='tmux switch -t '
+alias tlc='tmux list-command'
+alias tat='tmux attach -t'
+alias trs='tmux rename-session -t'
+
+
+# -------------------------------------------------------------------
 # Capistrano aliases
 # -------------------------------------------------------------------
  
