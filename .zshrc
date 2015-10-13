@@ -96,4 +96,5 @@ alias capd='cap deploy'
 # -------------------------------------------------------------------
  
 alias cls='clear'
+source $HOME/.aliases
  
