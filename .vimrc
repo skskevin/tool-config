@@ -1,12 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set to auto read when a file is changed from the outside
 set autoread
 set cursorcolumn
 set cursorline
 set fileformats+=dos
-autocmd FileType php setlocal noeol binary fileformat=dos
+set autoindent
+set smartindent
+autocmd FileType php setlocal noeol binary 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
