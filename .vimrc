@@ -6,6 +6,7 @@ set cursorcolumn
 set cursorline
 set fileformats+=dos
 set autoindent
+" set smartindent
 autocmd FileType php setlocal noeol binary 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

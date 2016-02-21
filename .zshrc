@@ -38,13 +38,13 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------------------------------------------
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin
 export PATH=/Applications/MAMP/bin/php/php5.4.25/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
+export HOMEBREW_GITHUB_API_TOKEN=dc2a820e8f86a011a94d1b9ce1cc3b2244eff9f3
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}!"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
- 
  
 # -------------------------------------------------------------------
 # Git aliases
