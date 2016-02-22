@@ -96,5 +96,6 @@ alias capd='cap deploy'
 # -------------------------------------------------------------------
  
 alias cls='clear'
+alias ssh='ssh -v'
 source $HOME/.aliases
  
