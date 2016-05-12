@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle Plugin
+" => Vundle 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -9,26 +9,33 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'git@github.com:ervandew/supertab.git'
-Plugin 'git@github.com:scrooloose/syntastic.git'
-Plugin 'git@github.com:jiangmiao/auto-pairs.git'
+Plugin 'ervandew/supertab.git'
+Plugin 'scrooloose/syntastic.git'
+Plugin 'jiangmiao/auto-pairs.git'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'vim-airline/vim-airline.git'
+Plugin 'kien/ctrlp.vim.git'
+Plugin 'nvie/vim-flake8.git'
+Plugin 'airblade/vim-gitgutter.git'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General 
+" => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoread
-set cursorcolumn
+" set cursorcolumn
 set cursorline
 set fileformats+=dos
 " set autoindent
 " set smartindent
 autocmd FileType php setlocal noeol binary 
+let mapleader=";"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => colors and fonts
+" => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
@@ -38,8 +45,10 @@ syntax enable
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set nu
+set sw=4
+set sts=4
+set tabstop=4 shiftwidth=4 expandtab
 set ts=4
-set expandtab
 
 
 """"""""""""""""""""""""""""""
@@ -58,14 +67,7 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 inoremap jj <ESC>
 
 """"""""""""""""""""""""""""""
-" => Plugin setting 
+" => Plugin Settings 
 """""""""""""""""""""""""""""""
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" flake8
+autocmd BufWritePost *.py call Flake8()

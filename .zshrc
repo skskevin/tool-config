@@ -29,16 +29,15 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump)
+plugins=(git autojump docker)
  
 source $ZSH/oh-my-zsh.sh
  
 # -------------------------------------------------------------------
 # ENVIRONMENT [PATH]
 # -------------------------------------------------------------------
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin
-export PATH=/Applications/MAMP/bin/php/php5.4.25/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
-export HOMEBREW_GITHUB_API_TOKEN=dc2a820e8f86a011a94d1b9ce1cc3b2244eff9f3
+export PATH=/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin:~/.composer/vendor/bin
+export PATH=/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -97,5 +96,6 @@ alias capd='cap deploy'
  
 alias cls='clear'
 alias ssh='ssh -v'
+alias proxy='proxychains4'
 source $HOME/.aliases
  
