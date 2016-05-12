@@ -1,0 +1,1 @@
+alias demoenv="source ~/Python/virtenv/demoenv/bin/activate"
