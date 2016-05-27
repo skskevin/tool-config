@@ -71,3 +71,5 @@ inoremap jj <ESC>
 """""""""""""""""""""""""""""""
 " flake8
 autocmd BufWritePost *.py call Flake8()
+
+let g:pep8_ignore="E501,W601"
