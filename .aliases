@@ -1,3 +1,5 @@
 alias riskenv="source ~/Python/virtenv/riskenv/bin/activate"
 alias ffansecenv="source ~/Python/virtenv/ffansecenv/bin/activate"
 alias scriptenv="source ~/Python/virtenv/scriptenv/bin/activate"
+alias demoenv="source ~/Python/virtenv/demoenv/bin/activate"
+alias btrafficenv="source ~/Python/virtenv/btrafficenv/bin/activate"
