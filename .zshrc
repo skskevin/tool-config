@@ -39,6 +39,10 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin:~/.composer/vendor/bin
 export PATH=/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
 
+# python virtualenv dir
+export WORKON_HOME=~/.Envs
+source /usr/local/bin/virtualenvwrapper.sh
+
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}!"
