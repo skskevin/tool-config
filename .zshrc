@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump docker)
+plugins=(git autojump docker dirhistory)
  
 source $ZSH/oh-my-zsh.sh
  
@@ -91,47 +91,20 @@ alias tks='tmux kill-server'
 # Docker alias and function
 # ------------------------------------
 #
-# # Get latest container ID
-alias dl="docker ps -l -q"
-
-# # Get container process
+alias dimages="docker images"
+alias drmi="docker rmi"
+alias dsearch="docker search"
+alias dpull="docker pull"
+alias drun="docker run"
+alias dlog="docker logs"
+alias dkill="docker kill"
+alias dstop="docker stop"
+alias dpause="docker pause"
+alias drename="docker rename"
+alias dstop="docker stop"
+alias drm="docker rm"
 alias dps="docker ps"
-
-# # Get process included stop container
-alias dpa="docker ps -a"
-
-# # Get images
-alias di="docker images"
-
-# # Get container IP
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress  }}'"
-
-# # Run deamonized container, e.g., $dkd base /bin/echo hello
-alias dkd="docker run -d -P"
-
-# # Run interactive container, e.g., $dki base /bin/bash
-alias dki="docker run -i -t -P"
-
-# # Execute interactive container, e.g., $dex base /bin/bash
-alias dex="docker exec -i -t"
-
-# # Stop all containers
-dstop() { docker stop $(docker ps -a -q);  }
-
-# # Remove all containers
-drm() { docker rm $(docker ps -a -q);  }
-
-# # Stop and Remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-# # Remove all images
-dri() { docker rmi $(docker images -q);  }
-
-# # Dockerfile build, e.g., $dbu tcnksm/test 
-dbu() { docker build -t=$1 .;  }
-
-# # Show all alias related docker
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }"']" }
+alias dbuild="docker build"
 
 # -------------------------------------------------------------------
 # Capistrano aliases

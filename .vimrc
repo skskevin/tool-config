@@ -8,6 +8,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'fisadev/vim-debug.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ervandew/supertab.git'
 Plugin 'scrooloose/syntastic.git'
