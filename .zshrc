@@ -41,7 +41,9 @@ export PATH=/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/bin/apac
 
 # python virtualenv dir
 export WORKON_HOME=~/.Envs
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh  ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
