@@ -36,7 +36,6 @@ source $ZSH/oh-my-zsh.sh
 # -------------------------------------------------------------------
 # ENVIRONMENT [PATH]
 # -------------------------------------------------------------------
-export PATH=/Users/tudouya/anaconda/bin
 export PATH=/usr/local/bin:/bin:/usr/sbin:/sbin:/usr/bin:/usr/X11/bin:/usr/local/git/bin:/opt/local/bin:~/.composer/vendor/bin:$PATH
 export PATH=/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/bin/apache2/bin:/Applications/MAMP/bin/:$PATH
 
@@ -123,4 +122,12 @@ alias cls='clear'
 alias ssh='ssh -v'
 alias proxy='proxychains4'
 source $HOME/.aliases
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
+# -------------------------------------------------------------------
+# OTHER aliases
+# -------------------------------------------------------------------
+os_version=`uname -s`
+if [ $os_version != "Linux" ]
+then
+    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+fi
